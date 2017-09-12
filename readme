@@ -1,5 +1,8 @@
 Space Defender
 
+before running the game you must have python and pygame installed
+to run navigate to src folder and type python Destroy.py
+
 
 Goal of the game is to get to the end.
 Controls:
@@ -25,6 +28,8 @@ asteroids spawn at random with different speeds and directions
 	smallest takes away 1 hp
 when largest asteroid is shot it splits into two medium sized ones
 when medium asteroid is shot it is split into two small asteroids
+
+Created by: Edgar Galindo
 
 Credits:
 Background music by ericskiff.com "all of us"
