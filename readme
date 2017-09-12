@@ -1,0 +1,34 @@
+Space Defender
+
+
+Goal of the game is to get to the end.
+Controls:
+	a: move ship left
+	d: move ship left
+	space bar = shoot
+	p: pause	
+	"cheat" +: increase health
+
+Ship starts with 100 health points
+Once 4th and 5th round has begun you get 100 health again
+5 levels to the game object is to destroy everything
+9 new enemy ships added per level
+	ships shoot downward at random
+	you can shoot enemy shots aswell
+	if shot by an enemy ship you lose 20 HP
+ships drop down a level at random
+at the begining of each level the ships spawn closer to you
+asteroids spawn at random with different speeds and directions
+	3 different types of asteroids
+	largest takes away 10 hp
+	medium takes away 5 hp
+	smallest takes away 1 hp
+when largest asteroid is shot it splits into two medium sized ones
+when medium asteroid is shot it is split into two small asteroids
+
+Credits:
+Background music by ericskiff.com "all of us"
+Sprites by arboris "found on google and on mulitple sites"
+Explosion sounds mediacollege.com soundbible.com awdpro.com
+
+
