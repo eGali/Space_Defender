@@ -1,7 +1,7 @@
 Space Defender
 
-before running the game you must have python and pygame installed
-to run navigate to src folder and type python Destroy.py
+Before running the game you must have python and pygame installed on machine.
+To run navigate to src folder and type "pythonw Destroy.py"
 
 
 Goal of the game is to get to the end.
