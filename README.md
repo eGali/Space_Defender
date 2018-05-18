@@ -4,8 +4,8 @@ Before running the game you must have python and pygame installed on machine.<br
 To run navigate to src folder and type "pythonw Destroy.py"
 
 
-Goal of the game is to get to the end.<br />
-Controls:<br />
+Goal of the game is to get to the end.<br /><br />
+Controls:
 	<ul>
 	   <li>a: move ship left</li>
 	   <li>d: move ship left</li>
@@ -14,26 +14,26 @@ Controls:<br />
 	   <li>"cheat button" +: increase health</li>
 	</ul>
 
-Ship starts with 100 health points<br />
-Once 4th and 5th round has begun you get 100 health again<br />
-5 levels to the game object is to destroy everything<br />
-9 new enemy ships added per level<br />
-	<ul style="list-style-type:none">
+Ship starts with 100 health points.<br />
+Once 4th and 5th round has begun you get 100 health again.<br />
+5 levels to the game object is to destroy everything.<br /><br />
+9 new enemy ships added per level:
+	<ul>
 	   <li>ships shoot downward at random</li>
 	   <li>you can shoot enemy shots aswell</li>
 	   <li>if shot by an enemy ship you lose 20 HP</li>
 	</ul>
-ships drop down a level at random<br />
-at the begining of each level the ships spawn closer to you<br />
-asteroids spawn at random with different speeds and directions<br />
+Ships drop down a level at random.<br />
+At the begining of each level the ships spawn closer to you.<br /><br />
+Asteroids spawn at random with different speeds and directions:
 	<ul>
-	   <li>3 different types of asteroids</li>
-	   <li>largest takes away 30 hp</li>
-	   <li>medium takes away 10 hp</li>
-	   <li>smallest takes away 5 hp</li>
+	   <li>3 different types of asteroids.</li>
+	   <li>Largest takes away 30 hp.</li>
+	   <li>Medium takes away 10 hp.</li>
+	   <li>Smallest takes away 5 hp.</li>
 	</ul>
-when largest asteroid is shot it splits into two medium sized ones<br />
-when medium asteroid is shot it is split into two small asteroids
+When largest asteroid is shot it splits into two medium sized ones.<br />
+When medium asteroid is shot it is split into two small asteroids.
 
 
 
