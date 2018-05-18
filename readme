@@ -23,11 +23,17 @@ ships drop down a level at random
 at the begining of each level the ships spawn closer to you
 asteroids spawn at random with different speeds and directions
 	3 different types of asteroids
-	largest takes away 10 hp
-	medium takes away 5 hp
-	smallest takes away 1 hp
+	largest takes away 30 hp
+	medium takes away 10 hp
+	smallest takes away 5 hp
 when largest asteroid is shot it splits into two medium sized ones
 when medium asteroid is shot it is split into two small asteroids
+
+
+
+![Alt text](src/images/screen_shot.png)
+
+
 
 Created by: Edgar Galindo
 

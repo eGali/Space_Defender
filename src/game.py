@@ -11,7 +11,7 @@ class Star(pygame.sprite.Sprite):
         :param image: The image that is going to be used for the star
         """
         super().__init__()
-        self.image = pygame.image.load('star.png').convert_alpha()
+        self.image = pygame.image.load('images/star.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -46,13 +46,13 @@ class Ship(pygame.sprite.Sprite):
         based on the position of the ship
         """
         if(pygame.key.get_pressed()[pygame.K_a] != 0):
-            self.image = pygame.image.load('ship_left.png').convert_alpha()
+            self.image = pygame.image.load('images/ship_left.png').convert_alpha()
         elif(pygame.key.get_pressed()[pygame.K_d] != 0):
-            self.image = pygame.image.load('ship_right.png').convert_alpha()
+            self.image = pygame.image.load('images/ship_right.png').convert_alpha()
         elif(pygame.key.get_pressed()[pygame.K_s] != 0):
-            self.image = pygame.image.load('ship.png').convert_alpha()
+            self.image = pygame.image.load('images/ship.png').convert_alpha()
         else:
-            self.image = pygame.image.load('ship.png').convert_alpha()
+            self.image = pygame.image.load('images/ship.png').convert_alpha()
     
     def getX(self):
         """

@@ -42,18 +42,18 @@ def main():
     
 #     create stars
     for x in range(0, 400):
-        star1 = Star(random.randrange(0, 800), random.randrange(0, 800), 'star.png')
+        star1 = Star(random.randrange(0, 800), random.randrange(0, 800), 'images/star.png')
         stars.add(star1)
     
 #     display and sounds used
     pygame.display.set_caption('Space Defender')
-    laserSound = pygame.mixer.Sound('laser.ogg')
-    enemyDead = pygame.mixer.Sound('enemyExplosion.ogg')
-    asteroidDestroy = pygame.mixer.Sound('asteroidExplosion.ogg')
-    backMusic = pygame.mixer.Sound('allOfUs.ogg')
-    shipExplode = pygame.mixer.Sound('shipExplode.ogg')
-    shiHit = pygame.mixer.Sound('shipHit.ogg')
-    bulletHit = pygame.mixer.Sound('hit.ogg')
+    laserSound = pygame.mixer.Sound('sounds/laser.ogg')
+    enemyDead = pygame.mixer.Sound('sounds/enemyExplosion.ogg')
+    asteroidDestroy = pygame.mixer.Sound('sounds/asteroidExplosion.ogg')
+    backMusic = pygame.mixer.Sound('sounds/allOfUs.ogg')
+    shipExplode = pygame.mixer.Sound('sounds/shipExplode.ogg')
+    shiHit = pygame.mixer.Sound('sounds/shipHit.ogg')
+    bulletHit = pygame.mixer.Sound('sounds/hit.ogg')
     
 #     create walls
     wall1 = Wall(-10,0,10,BOARD_LENGTH)
@@ -71,7 +71,7 @@ def main():
     
 #     fill screen and create ship
     screen.fill(SKY)
-    ship = Ship(200, 700, 'ship.png')
+    ship = Ship(200, 700, 'images/ship.png')
     all_sprites.add(ship)
     
 #     bool values for keys used
@@ -181,11 +181,11 @@ def main():
             if not all_shots.has(hit) and hit != ship and not all_walls.has(hit) and not all_enemy_shots.has(hit) and not all_enemies.has(hit):
                 kind = hit.getKind()
                 if kind == 1:
-                    damage = 5
-                elif kind == 2:
                     damage = 10
+                elif kind == 2:
+                    damage = 30
                 elif kind == 3:
-                    damage = 1
+                    damage = 5
                 SHIP_HEALTH  -= damage
                 shiHit.play()
                 all_sprites.remove(hit)
@@ -447,19 +447,19 @@ def asteroid(x):
     """
     image = None
     if (x == 0):
-        image = 'asteroid1.png'
+        image = 'images/asteroid1.png'
         kind = 1
     elif x == 1:
         y = random.randrange(0, 3)
         if y == 2:
-            image = 'asteroid2.png'
+            image = 'images/asteroid2.png'
             kind = 2
         else:
             kind = 3
-            image = 'asteroid3.png'
+            image = 'images/asteroid3.png'
 
     elif x == 2:
-        image = 'asteroid3.png'
+        image = 'images/asteroid3.png'
         kind = 3
     
     return Asteroid(random.randrange(0, 700), 0, random.randrange(-5, 5), random.randrange(1, 5), image, kind)
@@ -474,7 +474,7 @@ def level1(all_sprites, all_enemies, ENEMY_SPEED, startPos):
     """
     count = 50
     while count < 750:
-        e = Enemy(count, startPos, ENEMY_SPEED, 'enemy1.png', 1)
+        e = Enemy(count, startPos, ENEMY_SPEED, 'images/enemy1.png', 1)
         all_sprites.add(e)
         all_enemies.add(e)
         count += SHIPSPACE
@@ -513,7 +513,7 @@ def level2(all_sprites, all_enemies, ENEMY_SPEED, startPos):
     """
     count = 50
     while count < 750:
-        e = Enemy(count, startPos, ENEMY_SPEED * -1, 'enemy2.png', 2)
+        e = Enemy(count, startPos, ENEMY_SPEED * -1, 'images/enemy2.png', 2)
         all_enemies.add(e)
         all_sprites.add(e)
         count += SHIPSPACE
@@ -528,7 +528,7 @@ def level3(all_sprites, all_enemies, ENEMY_SPEED, startPos):
     """
     count = 50
     while count < 750:
-        e = Enemy(count, startPos, ENEMY_SPEED, 'enemy3.png', 3)
+        e = Enemy(count, startPos, ENEMY_SPEED, 'images/enemy3.png', 3)
         all_enemies.add(e)
         all_sprites.add(e)
         count += SHIPSPACE
@@ -543,7 +543,7 @@ def level4(all_sprites, all_enemies, ENEMY_SPEED, startPos):
     """
     count = 50
     while count < 750:
-        e = Enemy(count, startPos, ENEMY_SPEED * -1, 'enemy4.png', 4)
+        e = Enemy(count, startPos, ENEMY_SPEED * -1, 'images/enemy4.png', 4)
         all_enemies.add(e)
         all_sprites.add(e)
         count +=SHIPSPACE
@@ -558,7 +558,7 @@ def level5(all_sprites, all_enemies, ENEMY_SPEED, startPos):
     """
     count = 50
     while count < 750:
-        e = Enemy(count, startPos, ENEMY_SPEED, 'enemy5.png', 5)
+        e = Enemy(count, startPos, ENEMY_SPEED, 'images/enemy5.png', 5)
         all_enemies.add(e)
         all_sprites.add(e)
         count += SHIPSPACE
@@ -573,9 +573,9 @@ def shoot(ship, friendly):
     x = ship.getX()
     y = ship.getY()
     if friendly:
-        sh = Shoot(x, y, 'shot.png')
+        sh = Shoot(x, y, 'images/shot.png')
     else:
-        sh = enemyShoot(x, y, 'enemy_shot.png')
+        sh = enemyShoot(x, y, 'images/enemy_shot.png')
     return sh
     
 if __name__ == "__main__":
