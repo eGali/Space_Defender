@@ -1,32 +1,38 @@
 Space Defender
 
-Before running the game you must have python and pygame installed on machine.
+Before running the game you must have python and pygame installed on machine.<br />
 To run navigate to src folder and type "pythonw Destroy.py"
 
 
-Goal of the game is to get to the end.
-Controls:
-	a: move ship left
-	d: move ship left
-	space bar = shoot
-	p: pause	
-	"cheat" +: increase health
+Goal of the game is to get to the end.<br />
+Controls:<br />
+	<ul>
+	   <li>a: move ship left</li>
+	   <li>d: move ship left</li>
+	   <li>space bar = shoot</li>
+	   <li>p: pause</li>	
+	   <li>"cheat button" +: increase health</li>
+	</ul>
 
-Ship starts with 100 health points
-Once 4th and 5th round has begun you get 100 health again
-5 levels to the game object is to destroy everything
-9 new enemy ships added per level
-	ships shoot downward at random
-	you can shoot enemy shots aswell
-	if shot by an enemy ship you lose 20 HP
-ships drop down a level at random
-at the begining of each level the ships spawn closer to you
-asteroids spawn at random with different speeds and directions
-	3 different types of asteroids
-	largest takes away 30 hp
-	medium takes away 10 hp
-	smallest takes away 5 hp
-when largest asteroid is shot it splits into two medium sized ones
+Ship starts with 100 health points<br />
+Once 4th and 5th round has begun you get 100 health again<br />
+5 levels to the game object is to destroy everything<br />
+9 new enemy ships added per level<br />
+	<ul style="list-style-type:none">
+	   <li>ships shoot downward at random</li>
+	   <li>you can shoot enemy shots aswell</li>
+	   <li>if shot by an enemy ship you lose 20 HP</li>
+	</ul>
+ships drop down a level at random<br />
+at the begining of each level the ships spawn closer to you<br />
+asteroids spawn at random with different speeds and directions<br />
+	<ul>
+	   <li>3 different types of asteroids</li>
+	   <li>largest takes away 30 hp</li>
+	   <li>medium takes away 10 hp</li>
+	   <li>smallest takes away 5 hp</li>
+	</ul>
+when largest asteroid is shot it splits into two medium sized ones<br />
 when medium asteroid is shot it is split into two small asteroids
 
 
